@@ -1,0 +1,16 @@
+[2025-02-05T06:26:27.121068+00:00] main.INFO: Source table vbvn_payment_services_order_sts_data_prdion_submitted_hash does not exist. Skipping data migration... [] []
+[2025-02-05T06:26:51.781760+00:00] main.ERROR: There are no commands defined in the "app:config" namespace.
+
+Did you mean one of these?
+    module:config
+    setup:config
+    setup:store-config
+#0 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(720): Symfony\Component\Console\Application->findNamespace()
+#1 /home/lyoulw7e2gpk/public_html/everestkzm/setup/src/Magento/Setup/Console/Command/InstallCommand.php(240): Symfony\Component\Console\Application->find()
+#2 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute()
+#3 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run()
+#4 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand()
+#5 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun()
+#6 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
+#7 /home/lyoulw7e2gpk/public_html/everestkzm/deleteme.install.php(14): Symfony\Component\Console\Application->run()
+#8 {main} [] []

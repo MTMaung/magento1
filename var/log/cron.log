@@ -1,0 +1,91 @@
+[2025-02-05T06:27:53.865211+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2025-02-05T06:28:00.825707+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2025-02-05T06:28:01.965152+00:00] main.INFO: Cron Job submit_payment_services_order_production_feed is run [] []
+[2025-02-05T06:28:01.970265+00:00] main.INFO: Cron Job submit_payment_services_order_production_feed is successfully finished. Statistics: {"sum":0.0054500102996826,"count":1,"realmem":0,"emalloc":175832,"realmem_start":88604672,"emalloc_start":83886944} [] []
+[2025-02-05T06:28:02.115838+00:00] main.INFO: Cron Job submit_payment_services_order_sandbox_feed is run [] []
+[2025-02-05T06:28:02.116317+00:00] main.INFO: Cron Job submit_payment_services_order_sandbox_feed is successfully finished. Statistics: {"sum":0.00047802925109863,"count":1,"realmem":0,"emalloc":1072,"realmem_start":88604672,"emalloc_start":84063552} [] []
+[2025-02-05T06:28:02.205442+00:00] main.INFO: Cron Job submit_payment_services_order_status_production_feed is run [] []
+[2025-02-05T06:28:02.205912+00:00] main.INFO: Cron Job submit_payment_services_order_status_production_feed is successfully finished. Statistics: {"sum":0.00048708915710449,"count":1,"realmem":0,"emalloc":1072,"realmem_start":88604672,"emalloc_start":84065064} [] []
+[2025-02-05T06:28:02.283568+00:00] main.INFO: Cron Job submit_payment_services_order_status_sandbox_feed is run [] []
+[2025-02-05T06:28:02.284047+00:00] main.INFO: Cron Job submit_payment_services_order_status_sandbox_feed is successfully finished. Statistics: {"sum":0.00047993659973145,"count":1,"realmem":0,"emalloc":1072,"realmem_start":88604672,"emalloc_start":84066464} [] []
+[2025-02-05T06:28:02.326152+00:00] main.INFO: Cron Job submit_payment_services_store_production_feed is run [] []
+[2025-02-05T06:28:02.326774+00:00] main.INFO: Cron Job submit_payment_services_store_production_feed is successfully finished. Statistics: {"sum":0.00063991546630859,"count":1,"realmem":0,"emalloc":1072,"realmem_start":88604672,"emalloc_start":84067976} [] []
+[2025-02-05T06:28:02.369986+00:00] main.INFO: Cron Job submit_payment_services_store_sandbox_feed is run [] []
+[2025-02-05T06:28:02.370722+00:00] main.INFO: Cron Job submit_payment_services_store_sandbox_feed is successfully finished. Statistics: {"sum":0.00072789192199707,"count":1,"realmem":0,"emalloc":1072,"realmem_start":88604672,"emalloc_start":84069376} [] []
+[2025-02-05T06:28:03.806918+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2025-02-05T06:28:03.892810+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.086248874664307,"count":1,"realmem":0,"emalloc":204144,"realmem_start":90701824,"emalloc_start":89597008} [] []
+[2025-02-05T06:28:05.143229+00:00] main.ERROR: Cron Job indexer_reindex_all_invalid has an error: Could not ping search engine: No alive nodes found in your cluster. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":88604672,"emalloc_start":83690528} [] []
+[2025-02-05T06:28:05.143975+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Could not ping search engine: No alive nodes found in your cluster in /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-elasticsearch/Model/Adapter/Elasticsearch.php:268
+Stack trace:
+#0 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-elasticsearch/Model/Indexer/IndexerHandler.php(241): Magento\Elasticsearch\Model\Adapter\Elasticsearch->ping()
+#1 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-catalog-search/Model/Indexer/IndexerHandlerFactory.php(78): Magento\Elasticsearch\Model\Indexer\IndexerHandler->isAvailable()
+#2 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-catalog-search/Model/Indexer/Fulltext/Action/Full.php(274): Magento\CatalogSearch\Model\Indexer\IndexerHandlerFactory->create()
+#3 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\CatalogSearch\Model\Indexer\Fulltext\Action\Full->__construct()
+#4 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#5 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/ObjectManager.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#6 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/CatalogSearch/Model/Indexer/Fulltext/Action/FullFactory.php(43): Magento\Framework\ObjectManager\ObjectManager->create()
+#7 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-catalog-search/Model/Indexer/Fulltext.php(131): Magento\CatalogSearch\Model\Indexer\Fulltext\Action\FullFactory->create()
+#8 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/CatalogSearch/Model/Indexer/Fulltext/Interceptor.php(14): Magento\CatalogSearch\Model\Indexer\Fulltext->__construct()
+#9 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor->__construct()
+#10 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#11 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/ObjectManager/ObjectManager.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#12 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Indexer/ActionFactory.php(33): Magento\Framework\ObjectManager\ObjectManager->create()
+#13 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-indexer/Model/Indexer.php(407): Magento\Framework\Indexer\ActionFactory->create()
+#14 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-indexer/Model/Indexer.php(455): Magento\Indexer\Model\Indexer->getActionInstance()
+#15 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Indexer/Model/Indexer/Interceptor.php(239): Magento\Indexer\Model\Indexer->reindexAll()
+#16 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-indexer/Model/Indexer/DependencyDecorator.php(268): Magento\Indexer\Model\Indexer\Interceptor->reindexAll()
+#17 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Indexer/Model/Indexer/DependencyDecorator/Interceptor.php(212): Magento\Indexer\Model\Indexer\DependencyDecorator->reindexAll()
+#18 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-indexer/Model/Processor.php(102): Magento\Indexer\Model\Indexer\DependencyDecorator\Interceptor->reindexAll()
+#19 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Indexer\Model\Processor->reindexAllInvalid()
+#20 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Indexer\Model\Processor\Interceptor->___callParent()
+#21 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Indexer\Model\Processor\Interceptor->Magento\Framework\Interception\{closure}()
+#22 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Indexer/Model/Processor/Interceptor.php(23): Magento\Indexer\Model\Processor\Interceptor->___callPlugins()
+#23 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-indexer/Cron/ReindexAllInvalid.php(31): Magento\Indexer\Model\Processor\Interceptor->reindexAllInvalid()
+#24 [internal function]: Magento\Indexer\Cron\ReindexAllInvalid->execute()
+#25 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php(381): call_user_func_array()
+#26 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php(904): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob()
+#27 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php(865): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob()
+#28 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php(297): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs()
+#29 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Event/Invoker/InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute()
+#30 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Event/Invoker/InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod()
+#31 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Event/Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch()
+#32 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Framework/Event/Manager/Proxy.php(105): Magento\Framework\Event\Manager->dispatch()
+#33 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/App/Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch()
+#34 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Cron->launch()
+#35 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Cron\Interceptor->___callParent()
+#36 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-application-performance-monitor/Plugin/ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Cron\Interceptor->Magento\Framework\Interception\{closure}()
+#37 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch()
+#38 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Cron\Interceptor->Magento\Framework\Interception\{closure}()
+#39 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Framework/App/Cron/Interceptor.php(23): Magento\Framework\App\Cron\Interceptor->___callPlugins()
+#40 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/module-cron/Console/Command/CronCommand.php(140): Magento\Framework\App\Cron\Interceptor->launch()
+#41 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Command/Command.php(326): Magento\Cron\Console\Command\CronCommand->execute()
+#42 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#43 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent()
+#44 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#45 /home/lyoulw7e2gpk/public_html/everestkzm/generated/code/Magento/Cron/Console/Command/CronCommand/Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins()
+#46 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(1078): Magento\Cron\Console\Command\CronCommand\Interceptor->run()
+#47 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand()
+#48 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun()
+#49 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
+#50 /home/lyoulw7e2gpk/public_html/everestkzm/bin/magento(23): Symfony\Component\Console\Application->run()
+#51 {main} [] []
+[2025-02-05T06:28:05.152056+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2025-02-05T06:28:05.429582+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.27748107910156,"count":1,"realmem":2097152,"emalloc":2318536,"realmem_start":109576192,"emalloc_start":107041296} [] []
+[2025-02-05T06:28:10.371593+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2025-02-05T06:28:10.373914+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.0025677680969238,"count":1,"realmem":0,"emalloc":8416,"realmem_start":92798976,"emalloc_start":89019872} [] []
+[2025-02-05T06:28:10.472475+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2025-02-05T06:28:10.472781+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.00031304359436035,"count":1,"realmem":0,"emalloc":1040,"realmem_start":92798976,"emalloc_start":89142352} [] []
+[2025-02-05T06:28:10.569764+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2025-02-05T06:28:10.578205+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.0083708763122559,"count":1,"realmem":0,"emalloc":1512,"realmem_start":92798976,"emalloc_start":89170768} [] []
+[2025-02-05T06:28:10.672657+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2025-02-05T06:28:10.673017+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.00035214424133301,"count":1,"realmem":0,"emalloc":1072,"realmem_start":92798976,"emalloc_start":89287160} [] []
+[2025-02-05T06:28:10.770275+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2025-02-05T06:28:10.770620+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.00034499168395996,"count":1,"realmem":0,"emalloc":1072,"realmem_start":92798976,"emalloc_start":89291328} [] []
+[2025-02-05T06:28:10.781501+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2025-02-05T06:28:10.781855+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.00035190582275391,"count":1,"realmem":0,"emalloc":1072,"realmem_start":92798976,"emalloc_start":89294840} [] []
+[2025-02-05T06:28:10.874098+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2025-02-05T06:28:10.874530+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.00042510032653809,"count":1,"realmem":0,"emalloc":1072,"realmem_start":92798976,"emalloc_start":89298352} [] []
+[2025-02-05T06:28:11.665646+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2025-02-05T06:28:11.666064+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.0004270076751709,"count":1,"realmem":0,"emalloc":1168,"realmem_start":96993280,"emalloc_start":93425944} [] []
+[2025-02-05T06:28:11.773373+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2025-02-05T06:28:11.773752+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.00038003921508789,"count":1,"realmem":0,"emalloc":1168,"realmem_start":96993280,"emalloc_start":94039544} [] []

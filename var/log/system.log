@@ -14,3 +14,5 @@ Did you mean one of these?
 #6 /home/lyoulw7e2gpk/public_html/everestkzm/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
 #7 /home/lyoulw7e2gpk/public_html/everestkzm/deleteme.install.php(14): Symfony\Component\Console\Application->run()
 #8 {main} [] []
+[2025-02-07T16:18:10.179694+00:00] main.ERROR: Requested path frontend/magento/luma/en_us/magento_theme/favicon.ico is wrong. [] []
+[2025-02-07T16:18:10.183579+00:00] main.CRITICAL: Requested path frontend/magento/luma/en_us/magento_theme/favicon.ico is wrong. [] []

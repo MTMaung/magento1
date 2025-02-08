@@ -1216,3 +1216,7 @@ Stack trace:
 [2025-02-07T04:18:16.521641+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
 [2025-02-07T04:18:16.521687+00:00] main.DEBUG: Add of item with id PayPal_Braintree::settlement_report was processed [] []
 [2025-02-07T04:18:16.521729+00:00] main.DEBUG: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2025-02-07T16:18:10.179694+00:00] main.ERROR: Requested path frontend/magento/luma/en_us/magento_theme/favicon.ico is wrong. [] []
+[2025-02-07T16:18:10.183579+00:00] main.CRITICAL: Requested path frontend/magento/luma/en_us/magento_theme/favicon.ico is wrong. [] []
+[2025-02-08T03:29:03.958151+00:00] main.DEBUG: URI '/newsletter/subscriber/new/'' cannot be accessed with GET method (Magento\Newsletter\Controller\Subscriber\NewAction) [] []
+[2025-02-08T03:29:03.971117+00:00] main.DEBUG: Request validation failed for action "Magento\Newsletter\Controller\Subscriber\NewAction\Interceptor" {"exception":"[object] (Magento\\Framework\\App\\Request\\InvalidRequestException(code: 0): Invalid request received at /home/lyoulw7e2gpk/public_html/everestkzm/vendor/magento/framework/App/Request/HttpMethodValidator.php:69)"} []
